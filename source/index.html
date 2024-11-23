@@ -55,7 +55,11 @@
           <p class="hero__description">Занялся собой? Займись котом!</p>
         </div>
         <div class="hero__wrapper">
-          <img class="hero__image" src="images/product-index-hero.png" width="552" height="499" alt="Питание Cat Energy PRO со вкусом курицы">
+          <picture>
+            <source width="552" height="499" type="images/png" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-tablet@2x.png 2x">
+            <source width="700" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
+            <img class="hero__image" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Питание Cat Energy PRO со вкусом курицы">
+          </picture>
           <a class="button hero__button" href="#">Подобрать программу</a>
         </div>
       </div>
@@ -115,10 +119,16 @@
         </div>
         <div class="slider">
           <div class="slider__image-wrapper">
-            <img class="slider__img" src="images/slider-image-before.png" width="560" height="512" alt="Упитанный кот">
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet-desktop@1x.png 1x, images/cat-before-tablet-desktop@2x 2x">
+              <img class="slider__img" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Упитанный кот">
+            </picture>
           </div>
           <div class="slider__image-wrapper">
-            <img class="slider__img" src="images/slider-image-after.png" width="560" height="512" alt="Худой кот">
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet-desktop@1x.png 1x, images/cat-after-tablet-desktop@2x 2x">
+              <img class="slider__img" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
+            </picture>
           </div>
           <button class="slider__toggle" type="button"><span class="visually-hidden">Передвигать ползунок</span></button>
         </div>
@@ -132,7 +142,11 @@
           <address class="address__direction">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
         <div class="address__map-wrapper">
-          <img class="address__map-img" src="images/map.jpg" width="1440" height="400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"><!-- Добавить картинку с пином -->
+          <picture>
+            <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2 2x">
+            <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
+            <img class="address__map-img" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта офиса по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          </picture>
         </div>
       </div>
     </section>
