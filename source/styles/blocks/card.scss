@@ -1,0 +1,73 @@
+/*
+.card {
+
+}
+
+.card__link-image {
+
+}
+
+.card__image {
+
+}
+
+.card__descritpion {
+
+}
+*/
+.card__link-title {
+  text-decoration: none;
+  color: $variable-color;
+}
+
+.card__title {
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.card__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card__item {
+  font-size: 12px;
+  line-height: 18px;
+  color: $additional-color;
+}
+/*
+.card__type {
+
+}
+
+.card__value {
+
+}
+
+.card__button {
+
+}
+
+.card--show-more {
+
+}
+*/
+.card__more {
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 20px;
+  color: $extra-color;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.card__text {
+  font-size: 12px;
+  line-height: 16px;
+  color: $additional-color;
+}
+

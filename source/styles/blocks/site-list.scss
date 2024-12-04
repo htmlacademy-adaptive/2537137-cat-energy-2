@@ -1,0 +1,22 @@
+/*
+.site-list {
+
+}
+
+.site-list__item {
+
+}
+
+.site-list__item--current {
+
+}
+*/
+.site-list__button {
+  display: inline-block;
+  font-family: $font-secondary;
+  font-size: 20px;
+  line-height: 20px;
+  color: $primary-color;
+  text-decoration: none;
+  text-transform: uppercase;
+}
