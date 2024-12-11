@@ -4,8 +4,9 @@
 }
 */
 .main-nav__toggle {
+  display: block;
   background-color: $basic-background;
-  background-image: url("../icons/stack.svg#hamburger-button-navigation-mobile");
+  background-image: url("../../icons/stack.svg#hamburger-button-navigation-mobile");
   background-repeat: no-repeat;
   background-position: 24px 24px;
   width: 24px;
@@ -14,7 +15,7 @@
 }
 
 .main-nav__toggle--close {
-  background-image: url("../icons/stack.svg#close-button-navigation-mobile");
+  background-image: url("../../icons/stack.svg#close-button-navigation-mobile");
 }
 
 .main-nav__list {

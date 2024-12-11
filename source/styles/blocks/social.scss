@@ -10,20 +10,35 @@
 .social__item {
 
 }
-
+*/
 .social__link {
-
+  display: block;
+  text-decoration: none;
+  transition: all 1.3s;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  min-width: 28px;
+  min-height: 22px;
 }
 
 .social__link--vkontakte {
-
+  background-color: #666666;
+  mask-image: url("../../icons/stack.svg#vk-icon");
+  mask-repeat: no-repeat;
+  mask-size: 28px 22px;
 }
 
 .social__link--youtube {
-
+  background-color: #666666;
+  mask-image: url("../../icons/stack.svg#youtube-icon");
+  mask-repeat: no-repeat;
+  mask-size: 28px 22px;
 }
 
 .social__link--telegram {
-
+  background-color: #666666;
+  mask-image: url("../../icons/stack.svg#telegram-icon");
+  mask-repeat: no-repeat;
+  mask-size: 28px 22px;
 }
-*/
+

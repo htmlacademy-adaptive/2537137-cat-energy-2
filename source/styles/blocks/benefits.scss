@@ -18,27 +18,55 @@ benefits__container {
 .benefits__list {
   @include reset;
 }
-/*
+
 .benefits__item {
-
+  position: relative;
+  display: block;
 }
 
-.benefits__item--icon-leaf {
-
+.benefits__item:not(:last-child) {
+  margin-bottom: 24px;
 }
 
-.benefits__item--icon-liquid {
-
+.benefits__item::before {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: $additional-background;
+  background-position: 50%;
+  position: relative;
 }
 
-.benefits__item--icon-tableware {
-
+.benefits__item--icon-leaf::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon-leaf");
+  background-repeat: no-repeat;
+  background-size: 30px 32px;
 }
 
-.benefits__item--icon-clock {
-
+.benefits__item--icon-liquid::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon-liquid");
+  background-repeat: no-repeat;
+  background-size: 26px 29px;
 }
-*/
+
+.benefits__item--icon-tableware::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon-tableware");
+  background-repeat: no-repeat;
+  background-size: 25px 30px;
+}
+
+.benefits__item--icon-clock::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon-clock");
+  background-repeat: no-repeat;
+  background-size: 26px 31px;
+}
+
 .benefits__description {
   color: $additional-color;
+  margin: 0;
 }
