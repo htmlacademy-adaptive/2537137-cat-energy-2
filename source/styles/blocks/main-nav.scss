@@ -2,11 +2,23 @@
 .main-nav {
 
 }
-
-.main-nav__toggle {
-
-}
 */
+.main-nav__toggle {
+  display: block;
+  background-color: $basic-background;
+  background-image: url("../../icons/stack.svg#hamburger-button-navigation-mobile");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  border: none;
+
+  &--close {
+    background-image: url("../../icons/stack.svg#close-button-navigation-mobile");
+  }
+}
+
 .main-nav__list {
   @include reset;
 }

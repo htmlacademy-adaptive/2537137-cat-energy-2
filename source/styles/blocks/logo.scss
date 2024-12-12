@@ -1,13 +1,32 @@
-/*
 .logo {
+  display: block;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+/*
+.logo__image {
 
 }
 
 .logo__text-image {
 
 }
-
-.logo__link {
-
-}
 */
+.logo__link {
+  display: block;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
