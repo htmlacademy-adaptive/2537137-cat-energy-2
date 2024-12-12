@@ -10,6 +10,14 @@
   border: none;
   text-transform: uppercase;
   margin: 0;
+
+  &:hover {
+    background-color: $background-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--secondary {

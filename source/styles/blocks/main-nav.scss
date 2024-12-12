@@ -8,14 +8,15 @@
   background-color: $basic-background;
   background-image: url("../../icons/stack.svg#hamburger-button-navigation-mobile");
   background-repeat: no-repeat;
-  background-position: 24px 24px;
+  background-size: 24px 24px;
+  background-position: center;
   width: 24px;
   height: 24px;
   border: none;
-}
 
-.main-nav__toggle--close {
-  background-image: url("../../icons/stack.svg#close-button-navigation-mobile");
+  &--close {
+    background-image: url("../../icons/stack.svg#close-button-navigation-mobile");
+  }
 }
 
 .main-nav__list {
