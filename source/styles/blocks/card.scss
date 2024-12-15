@@ -1,20 +1,3 @@
-/*
-.card {
-
-}
-
-.card__link-image {
-
-}
-
-.card__image {
-
-}
-
-.card__descritpion {
-
-}
-*/
 .card__link-title {
   text-decoration: none;
   color: $variable-color;
@@ -38,19 +21,7 @@
   line-height: 18px;
   color: $additional-color;
 }
-/*
-.card__type {
 
-}
-
-.card__value {
-
-}
-
-.card__button {
-
-}
-*/
 .card--show-more::before {
   content: "";
   display: block;

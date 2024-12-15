@@ -1,8 +1,3 @@
-/*
-.copyright {
-
-}
-*/
 .copyright__link {
   text-decoration: none;
 
@@ -23,8 +18,7 @@
     background-color: $additional-background;
   }
 
-  &:active,
-  &:active::after {
+  &:active {
     opacity: 0.3;
   }
 }
