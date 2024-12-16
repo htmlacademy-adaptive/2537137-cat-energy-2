@@ -9,24 +9,23 @@
     opacity: 0.6;
   }
 }
-/*
-.logo__image {
 
+.logo__link {
+  display: block;
+  text-decoration: none;
 }
 
 .logo__text-image {
+  display: inline-block;
+  width: 128px;
+  height: 24px;
 
-}
-*/
-.logo__link {
-  display: block;
-
-  &:hover {
-    opacity: 0.8;
+  &:hover,
+  &:focus {
+    fill: #3e3e3e;
   }
 
   &:active {
-    opacity: 0.6;
+    fill: #6b6b6b;
   }
 }
-
