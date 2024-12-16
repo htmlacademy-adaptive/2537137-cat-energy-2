@@ -29,8 +29,31 @@
     transform: translate(-50%, -50%);
   }
 
+  &::after {
+    content: "";
+    background-color: #666666;
+    position: absolute;
+    width: 24px;
+    height: 18px;
+    mask-image: url("../../icons/stack.svg#toggle-button-icon");
+    mask-position: 50%;
+    mask-size: 24px 18px;
+    mask-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   &:hover {
     background-color: $additional-background;
+
+    &::after {
+      background-color: $additional-background;
+    }
+
+    &::before {
+      border: 2px solid $additional-background;
+    }
   }
 
   &:active {
@@ -39,25 +62,3 @@
   }
 }
 
-.slider__toggle::after {
-  content: "";
-  background-color: #666666;
-  position: absolute;
-  width: 24px;
-  height: 18px;
-  mask-image: url("../../icons/stack.svg#toggle-button-icon");
-  mask-position: 50%;
-  mask-size: 24px 18px;
-  mask-repeat: no-repeat;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  &:hover::after {
-    background-color: $additional-background;
-  }
-}
-
-.slider__toggle:hover::before {
-  border: 2px solid $additional-background;
-}
