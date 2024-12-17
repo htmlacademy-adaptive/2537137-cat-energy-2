@@ -1,3 +1,29 @@
-.header {
+.header__container {
+  max-width: $mobile-width-only;
+}
+
+.header__toggle {
   display: block;
+  background-color: $basic-background;
+  background-image: url("../../icons/stack.svg#hamburger-button-navigation-mobile");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+
+  &--close:hover,
+  &--close:active {
+    background-image: url("../../icons/stack.svg#close-button-navigation-mobile");
+  }
+}
+
+.header__menu-wrapper {
+  @include flex-between;
+  min-height: 38px;
+  padding: 13px 20px 15px;
+  position: relative;
 }

@@ -23,8 +23,8 @@
 }
 
 .card--show-more::before {
-  content: "";
-  display: block;
+  @include pseudo;
+  position: relative;
   background-image: url("../../icons/stack.svg#catalog-plus-icon");
   background-size: 30px 30px;
   background-position: top center;

@@ -9,8 +9,8 @@
   margin: 0;
 
   &::before {
-    display: block;
-    content: "";
+    @include pseudo;
+    position: relative;
     background-image: url("../../icons/stack.svg#gift-icon");
     background-repeat: no-repeat;
     background-size: 78px 80px;

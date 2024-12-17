@@ -1,5 +1,5 @@
 .logo {
-  display: block;
+  display: inline-block;
 
   &:hover {
     opacity: 0.8;
@@ -10,15 +10,9 @@
   }
 }
 
-.logo__link {
-  display: block;
-  text-decoration: none;
-}
-
-.logo__text-image {
+.logo__link .logo__text-image,
+.logo__link .logo__image {
   display: inline-block;
-  width: 128px;
-  height: 24px;
 
   &:hover,
   &:focus {
@@ -27,5 +21,12 @@
 
   &:active {
     fill: #6b6b6b;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .logo__text-image {
+    @include transform;
+    position: absolute;
   }
 }

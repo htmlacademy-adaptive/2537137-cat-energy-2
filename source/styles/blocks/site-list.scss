@@ -1,3 +1,22 @@
+.site-list {
+  @include flex-center;
+  position: absolute;
+  background-color: $basic-background;
+  width: 100%;
+  left: 0;
+}
+
+.site-list__item {
+  padding: 22px 10px 23px;
+  border-bottom: 1px solid #e6e6e6;
+  width: 100%;
+  text-align: center;
+
+  &:first-child {
+    border-top: 1px solid #e6e6e6;
+  }
+}
+
 .site-list__button {
   display: inline-block;
   font-family: $font-secondary;
