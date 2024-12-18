@@ -1,9 +1,16 @@
+.address__wrapper {
+  @include flex-between;
+  padding: 26px 20px;
+}
+
 .address__text {
   font-family: $font-secondary;
   font-size: 16px;
   line-height: 20px;
   color: $extra-color;
   text-transform: uppercase;
+  margin: 0;
+  padding-right: 10px;
 }
 
 .address__direction {
@@ -11,4 +18,9 @@
   font-size: 14px;
   line-height: 20px;
   color: $additional-color;
+  padding-left: 10px;
+}
+
+.address__map-img {
+  display: block;
 }

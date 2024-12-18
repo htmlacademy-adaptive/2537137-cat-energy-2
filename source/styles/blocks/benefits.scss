@@ -1,9 +1,18 @@
+.benefits {
+  margin-bottom: 49px;
+}
+
+.benefits__container {
+  padding: 0 20px;
+}
+
 .benefits__title {
   font-family: $font-secondary;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
   margin: 0;
+  margin-bottom: 40px;
 }
 
 .benefits__list {
@@ -13,18 +22,20 @@
 .benefits__item {
   position: relative;
   display: block;
+  min-height: 60px;
 
   &:not(:last-child) {
     margin-bottom: 24px;
   }
 
   &::before {
-    display: block;
-    content: "";
+    @include pseudo;
     width: 60px;
     height: 60px;
     background-color: $additional-background;
     background-position: 50%;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -55,4 +66,5 @@
 .benefits__description {
   color: $additional-color;
   margin: 0;
+  padding-left: 80px;
 }

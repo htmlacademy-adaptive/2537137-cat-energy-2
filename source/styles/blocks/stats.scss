@@ -2,6 +2,8 @@
   font-family: $font-secondary;
   font-size: 24px;
   line-height: 24px;
+  padding: 14px 5px 17px;
+  text-align: center;
 }
 
 .stats__definition {
@@ -9,4 +11,19 @@
   line-height: 12px;
   color: $additional-color;
   text-transform: lowercase;
+  margin: 0;
+  text-align: center;
+  padding: 0 15px;
+  position: absolute;
+  bottom: -17px;
+  left: 15%;
+  background-color: $extra-background;
+}
+
+.stats__item {
+  min-width: 124px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  min-height: 56px;
+  position: relative;
 }

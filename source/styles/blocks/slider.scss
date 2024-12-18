@@ -1,6 +1,8 @@
 .slider {
   position: relative;
   display: block;
+  min-width: 280px;
+  min-height: 256px;
 }
 
 .slider__toggle {
@@ -14,7 +16,8 @@
   display: block;
   position: absolute;
   top: 0;
-  left: -2px;
+  right: 50%;
+  z-index: 10;
 
   &::before {
     @include pseudo;
@@ -56,3 +59,17 @@
   }
 }
 
+.slider__image-wrapper {
+  width: 50%;
+  overflow: hidden;
+  position: absolute;
+
+  &--first {
+    z-index: 9;
+    background-color: $extra-background;
+  }
+
+  &--second {
+    width: 100%;
+  }
+}

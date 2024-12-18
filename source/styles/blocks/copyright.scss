@@ -1,4 +1,5 @@
 .copyright__link {
+  @include flex-between;
   text-decoration: none;
 
   &:active {

@@ -1,5 +1,6 @@
 .social__list {
   @include reset;
+  @include flex-between;
 }
 
 .social__link {

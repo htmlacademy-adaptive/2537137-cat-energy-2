@@ -1,16 +1,37 @@
 .main-nav {
-  position: relative;
   width: auto;
   background-color: $basic-background;
-  min-height: 60px;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
+
+  &--opened:active .main-nav__list {
+    display: block;
+  }
 }
 
+.main-nav__toggle {
+  display: block;
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  background-color: $basic-background;
+  background-image: url("../../icons/stack.svg#hamburger-button-navigation-mobile");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+
+  &--open:active {
+    background-image: url("../../icons/stack.svg#close-button-navigation-mobile");
+  }
+}
 
 .main-nav__list {
   @include reset;
 }
-

@@ -2,16 +2,23 @@
   background-color: $extra-background;
 }
 
+.example__container {
+  padding: 25px 20px 40px;
+}
+
 .example__title {
   font-family: $font-secondary;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
   margin: 0;
+  margin-bottom: 40px;
 }
 
 .example__text {
   color: $additional-color;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .example__text-value {
@@ -19,4 +26,14 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.example__stats {
+  @include flex-between;
+  margin: 0;
+  margin-bottom: 30px;
 }
