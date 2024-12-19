@@ -64,3 +64,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin benefit-item {
+  font-size: 14px;
+  line-height: 14px;
+  color: $additional-color;
+  margin: 0;
+}

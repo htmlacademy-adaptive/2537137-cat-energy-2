@@ -1,4 +1,35 @@
+.card {
+  padding: 20px 20px 24px;
+  border-bottom: 1px solid #ebebeb;
+
+  &__more-wrapper {
+    padding: 25px 30px 21px;
+    text-align: center;
+  }
+
+  &--show-more {
+    padding-top: 25px;
+    position: relative;
+  }
+}
+
+.card__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 17px;
+}
+
+.card__link-image {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.card__image {
+  display: block;
+}
+
 .card__link-title {
+  display: inline-block;
   text-decoration: none;
   color: $variable-color;
 }
@@ -10,6 +41,8 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 14px;
+  padding-right: 64px;
 }
 
 .card__list {
@@ -17,20 +50,27 @@
 }
 
 .card__item {
+  @include flex-between;
   font-size: 12px;
   line-height: 18px;
   color: $additional-color;
 }
 
-.card--show-more::before {
+.card__type,
+.card__value {
+  margin: 0;
+}
+
+.card__link-icon::before {
   @include pseudo;
-  position: relative;
+  @include transform;
   background-image: url("../../icons/stack.svg#catalog-plus-icon");
   background-size: 30px 30px;
   background-position: top center;
   background-repeat: no-repeat;
   width: 30px;
   height: 30px;
+  top: 40px;
 }
 
 .card__more {
@@ -41,11 +81,17 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 8px;
+  padding-top: 23px;
 }
 
 .card__text {
   font-size: 12px;
   line-height: 16px;
   color: $additional-color;
+  margin: 0;
 }
 
+.card__button {
+  width: 100%;
+}

@@ -1,3 +1,11 @@
+.address {
+  display: block;
+
+  &--catalog-page {
+    background-color: $variable-background;
+  }
+}
+
 .address__wrapper {
   @include flex-between;
   padding: 26px 20px;

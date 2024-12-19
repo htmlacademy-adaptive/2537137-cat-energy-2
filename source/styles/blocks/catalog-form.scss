@@ -1,8 +1,19 @@
-.catalog-form__input {
-  font-family: $font-secondary;
-  color: $additional-color;
-  font-size: 20px;
-  line-height: 30px;
-  text-transform: uppercase;
-}
+.catalog-form {
+  padding: 0 20px;
 
+  &__input {
+    font-family: $font-secondary;
+    color: $additional-color;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding: 13px;
+    border: 1px solid #cdcdcd;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  &__button {
+    width: 100%;
+  }
+}

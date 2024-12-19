@@ -1,12 +1,35 @@
+.additional-products {
+  display: block;
+  position: relative;
+
+  &__wrapper {
+    padding: 0 20px;
+  }
+
+  &::after {
+    @include pseudo;
+    border-top: 2px solid $additional-background;
+    height: 2px;
+    width: 100%;
+    top: 14px;
+    right: 0;
+    z-index: 11;
+  }
+}
+
 .additional-products__title {
   font-family: $font-secondary;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   margin: 0;
+  padding: 0 34px 35px 20px;
+  background-color: $secondary-color;
+  z-index: 12;
+  position: relative;
+  display: inline-block;
 }
 
 .additional-products__list {
   @include reset;
 }
-

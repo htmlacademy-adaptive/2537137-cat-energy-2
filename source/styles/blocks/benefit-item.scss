@@ -1,3 +1,12 @@
+.benefit-item {
+  display: block;
+  margin-bottom: 18px;
+
+  &__button {
+    width: 100%;
+  }
+}
+
 .benefit-item__name {
   font-family: $font-secondary;
   font-size: 16px;
@@ -5,11 +14,21 @@
   font-weight: 400;
   color: $variable-color;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 13px;
+  border-top: 1px solid #cdcdcd;
+  margin-bottom: 13px;
 }
 
-.benefit-item__text,
+.benefit-item__wrapper {
+  @include flex-between;
+  margin-bottom: 15px;
+}
+
+.benefit-item__text {
+  @include benefit-item;
+}
+
 .benefit-item__value {
-  font-size: 14px;
-  line-height: 14px;
-  color: $additional-color;
+  @include benefit-item;
 }
