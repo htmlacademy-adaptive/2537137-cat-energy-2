@@ -1,15 +1,11 @@
 .header__container {
   position: relative;
-
-  @media (min-width: $tablet-width) {
-    & {
-      min-height: 50px;
-    }
-  }
+  max-width: $mobile-width-only;
 }
 
 .header__menu-wrapper {
   @include flex-between;
-  padding: 13px 20px 15px;
+  padding: 13px 0 15px;
   position: relative;
+  max-width: $mobile-width-only;
 }

@@ -1,12 +1,8 @@
 .main-nav {
-  width: auto;
+  max-width: $mobile-width-only;
   background-color: $basic-background;
 
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  &--opened:active .main-nav__list {
+  &--closed {
     display: block;
   }
 }
@@ -27,7 +23,7 @@
   border: none;
   cursor: pointer;
 
-  &--open:active {
+  &--closed {
     background-image: url("../../icons/stack.svg#close-button-navigation-mobile");
   }
 }

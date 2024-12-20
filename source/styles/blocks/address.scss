@@ -8,7 +8,8 @@
 
 .address__wrapper {
   @include flex-between;
-  padding: 26px 20px;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
 .address__text {
@@ -31,4 +32,5 @@
 
 .address__map-img {
   display: block;
+  margin: 0 auto;
 }

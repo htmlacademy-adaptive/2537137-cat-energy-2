@@ -10,10 +10,6 @@
   min-height: 320px;
 }
 
-.hero__wrapper {
-  padding: 0 20px;
-}
-
 .hero__title {
   font-family: $font-secondary;
   font-size: 36px;
@@ -48,5 +44,6 @@
 
 .hero__image {
   display: block;
+  margin: 0 auto;
   margin-bottom: 3px;
 }
