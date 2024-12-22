@@ -1,9 +1,10 @@
 .site-list {
-  position: absolute;
   background-color: $basic-background;
-  width: 100%;
-  left: 0;
-  top: 70px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 33px;
+  }
 }
 
 .site-list__item {

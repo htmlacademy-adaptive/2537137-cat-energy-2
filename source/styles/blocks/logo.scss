@@ -13,6 +13,12 @@
   &__image {
     display: inline-block;
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
 }
 
 .logo__link {
@@ -35,7 +41,7 @@
   max-width: $mobile-width-only;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    left: 73px;
+    position: static;
+    transform: none;
   }
 }

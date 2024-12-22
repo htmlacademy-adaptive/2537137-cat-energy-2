@@ -1,9 +1,10 @@
 .catalog {
   display: block;
-  max-width: $mobile-width-only;
 
-  &__container {
-    padding: 0;
+  .catalog__container {
+    @media (max-width: $mobile-width-only) {
+      padding: 0;
+    }
   }
 }
 

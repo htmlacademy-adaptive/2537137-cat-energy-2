@@ -2,6 +2,13 @@
   margin-bottom: 49px;
 }
 
+.benefits__container {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 46px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+}
+
 .benefits__title {
   font-family: $font-secondary;
   font-size: 36px;
@@ -13,6 +20,12 @@
 
 .benefits__list {
   @include reset;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 37px 153px;
+  }
 }
 
 .benefits__item {

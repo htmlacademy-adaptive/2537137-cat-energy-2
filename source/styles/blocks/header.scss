@@ -1,11 +1,18 @@
 .header__container {
   position: relative;
-  max-width: $mobile-width-only;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header__menu-wrapper {
   @include flex-between;
   padding: 13px 0 15px;
   position: relative;
-  max-width: $mobile-width-only;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
