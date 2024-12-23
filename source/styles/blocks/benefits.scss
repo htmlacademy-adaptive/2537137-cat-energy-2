@@ -6,6 +6,7 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 46px;
     border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 45px;
   }
 }
 
@@ -16,6 +17,12 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
 }
 
 .benefits__list {
@@ -37,6 +44,30 @@
     margin-bottom: 24px;
   }
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    counter-increment: verse 1;
+
+    ::after {
+      @include pseudo;
+      content: counter(verse);
+      position: absolute;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      color: $variable-background;
+      font-family: "Oswald", "Arial", sans-serif;
+      top: -30px;
+      right: 0;
+      z-index: -1;
+    }
+  }
+
   &::before {
     @include pseudo;
     width: 60px;
@@ -45,6 +76,12 @@
     background-position: 50%;
     top: 0;
     left: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      top: 40px;
+    }
   }
 }
 
@@ -76,4 +113,10 @@
   color: $additional-color;
   margin: 0;
   padding-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 151px 26px 57px 0;
+  }
 }

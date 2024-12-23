@@ -12,14 +12,25 @@
   border-bottom: 1px solid #e6e6e6;
   text-align: center;
 
-  &:first-child {
-    border-top: 1px solid #e6e6e6;
+  @media (max-width: $mobile-width-only) {
+    .site-list__item:first-child {
+      border-top: 1px solid #e6e6e6;
+    }
   }
 
   @media (min-width: $tablet-width) {
     @include flex-between;
     border: none;
     padding: 0;
+
+    &--current {
+      border-top: none;
+      text-decoration: underline;
+      text-underline-offset: 10px;
+      text-decoration-thickness: 2px;
+      text-underline-position: under;
+      text-decoration-color: $additional-background;
+    }
   }
 }
 
@@ -31,4 +42,9 @@
   color: $primary-color;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 14px;
+    padding-bottom: 12px;
+  }
 }
