@@ -4,10 +4,19 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
 }
 
 .option__list {
   @include reset;
+
+  @media (min-width: $desktop-width) {
+    @include flex-between;
+    gap: 80px;
+  }
 }
 
 .option__item {
@@ -29,6 +38,15 @@
     }
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 77px 61px 55px 52px;
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
   &::before {
     @include pseudo;
     background-color: $additional-background;
@@ -44,6 +62,14 @@
       right: 63px;
       top: 77px;
       left: auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 106px;
+      right: auto;
+      top: 47px;
+      left: 52px;
     }
   }
 
@@ -69,6 +95,15 @@
     left: auto;
     right: 93px;
   }
+
+  @media (min-width: $desktop-width) {
+    background-size: 70px 97px;
+    width: 70px;
+    height: 97px;
+    right: auto;
+    top: 41px;
+    left: 67px;
+  }
 }
 
 .option__item--icon-pro::after {
@@ -87,6 +122,15 @@
     left: auto;
     right: 29px;
   }
+
+  @media (min-width: $desktop-width) {
+    background-size: 134px 56px;
+    width: 134px;
+    height: 56px;
+    top: 67px;
+    right: auto;
+    left: 33px;
+  }
 }
 
 .option__title {
@@ -104,6 +148,11 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+    margin-bottom: 73px;
   }
 }
 

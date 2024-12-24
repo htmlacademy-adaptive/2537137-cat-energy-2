@@ -4,6 +4,11 @@
   line-height: 24px;
   padding: 14px 5px 17px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .stats__definition {
@@ -18,6 +23,12 @@
   bottom: -17px;
   left: 15%;
   background-color: $extra-background;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $secondary-color;
+  }
 }
 
 .stats__item {

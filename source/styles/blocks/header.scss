@@ -4,6 +4,27 @@
       padding-top: 25px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      @include pseudo;
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%), url("../../images/index-background-desktop@2x.png");
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: 100% 100%;
+      width: 50%;
+      height: 694px;
+      top: 0;
+      right: 0;
+      z-index: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .header__container {
+      padding-top: 55px;
+    }
+  }
 }
 
 .header__container {

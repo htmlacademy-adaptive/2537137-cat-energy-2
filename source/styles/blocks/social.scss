@@ -1,6 +1,10 @@
 .social__list {
   @include reset;
   @include flex-between;
+
+  @media (min-width: $tablet-width) {
+    gap: 24px;
+  }
 }
 
 .social__link {

@@ -1,10 +1,20 @@
 .example {
   background-color: $extra-background;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient($basic-background 57%, $extra-background 55%);
+    margin-bottom: 101px;
+  }
 }
 
 .example__container {
   padding-top: 25px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .example__title {
@@ -14,12 +24,30 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 .example__text {
   color: $additional-color;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 55px;
+  }
+}
+
+.example__text-wrapper {
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
 }
 
 .example__text-value {
@@ -31,10 +59,33 @@
   margin-bottom: 20px;
   padding: 0 10px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    position: absolute;
+    top: 240px;
+    right: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.example__price {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 30px;
+    right: 0;
+  }
 }
 
 .example__stats {
   @include flex-between;
   margin: 0;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    gap: 43px;
+  }
 }

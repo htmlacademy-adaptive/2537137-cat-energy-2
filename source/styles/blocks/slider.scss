@@ -4,6 +4,12 @@
   width: 280px;
   height: 256px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+    display: block;
+  }
 }
 
 .slider__toggle {
@@ -68,6 +74,11 @@
   &--first {
     z-index: 9;
     background-color: $extra-background;
+
+    @media (min-width: $tablet-width) {
+      background-image: linear-gradient($basic-background 30%, $extra-background 30%);
+      top: -3px;
+    }
   }
 
   &--second {

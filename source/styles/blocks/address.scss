@@ -10,6 +10,11 @@
   @include flex-between;
   padding-top: 26px;
   padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 40px;
+    gap: 308px;
+  }
 }
 
 .address__text {
@@ -20,6 +25,12 @@
   text-transform: uppercase;
   margin: 0;
   padding-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    text-align: left;
+  }
 }
 
 .address__direction {
@@ -28,6 +39,18 @@
   line-height: 20px;
   color: $additional-color;
   padding-left: 10px;
+  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    text-align: right;
+    display: block;
+
+    &--city {
+      padding-top: 20px;
+      display: inline-block;
+    }
+  }
 }
 
 .address__map-img {
