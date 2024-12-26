@@ -11,12 +11,25 @@
     padding-top: 25px;
     position: relative;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 37px 40px;
+    border: none;
+    background-image: linear-gradient($basic-background 100px, $variable-background 100px, $variable-background 312px);
+  }
 }
 
 .card__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    @include flex-between;
+    flex-direction: column;
+    gap: 22px;
+    margin-bottom: 32px;
+  }
 }
 
 .card__link-image {
@@ -43,6 +56,15 @@
   margin: 0;
   margin-bottom: 14px;
   padding-right: 64px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    padding-right: 55px;
+    padding-left: 60px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
 }
 
 .card__list {
@@ -54,11 +76,32 @@
   font-size: 12px;
   line-height: 18px;
   color: $additional-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+    text-decoration: underline #cdcdcd;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
+    text-underline-position: under;
+    justify-content: flex-start;
+  }
 }
 
 .card__type,
 .card__value {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.card__value {
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
 }
 
 .card__link-icon::before {

@@ -76,8 +76,12 @@
     background-color: $extra-background;
 
     @media (min-width: $tablet-width) {
-      background-image: linear-gradient($basic-background 30%, $extra-background 30%);
-      top: -3px;
+      background-image: linear-gradient($basic-background 178px, $extra-background 178px, $extra-background 164px);
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: linear-gradient($basic-background 136px, $variable-background 136px, $variable-background 240px);
+      top: -5px;
     }
   }
 

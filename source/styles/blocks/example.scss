@@ -3,7 +3,12 @@
 
   @media (min-width: $tablet-width) {
     background-image: linear-gradient($basic-background 57%, $extra-background 55%);
-    margin-bottom: 101px;
+    padding-bottom: 101px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 75px;
+    background-image: linear-gradient($basic-background 136px, $variable-background 136px, $variable-background 326px);
   }
 }
 
@@ -14,6 +19,11 @@
   @media (min-width: $tablet-width) {
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include flex-between;
+    gap: 224px;
   }
 }
 
@@ -30,6 +40,10 @@
     line-height: 60px;
     margin-bottom: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
 }
 
 .example__text {
@@ -42,11 +56,23 @@
     line-height: 24px;
     margin-bottom: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
 }
 
 .example__text-wrapper {
   @media (min-width: $tablet-width) {
     position: relative;
+    margin-bottom: 99px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    margin-bottom: 0;
+    max-width: 432px;
+    min-height: 317px;
   }
 }
 
@@ -69,6 +95,11 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    text-align: left;
+  }
 }
 
 .example__price {
@@ -76,6 +107,11 @@
     position: absolute;
     top: 30px;
     right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    margin-left: 63px;
   }
 }
 
@@ -87,5 +123,11 @@
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
     gap: 43px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 42px;
+    margin-bottom: 55px;
   }
 }

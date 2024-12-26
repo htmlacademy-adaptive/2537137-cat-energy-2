@@ -8,26 +8,36 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    padding: 15px 30px 20px;
   }
 }
 
 .stats__definition {
   font-size: 12px;
   line-height: 12px;
+  max-width: 77px;
   color: $additional-color;
   text-transform: lowercase;
   margin: 0;
   text-align: center;
-  padding: 0 15px;
+  padding: 0 10px;
   position: absolute;
   bottom: -17px;
-  left: 15%;
+  left: 20%;
   background-color: $extra-background;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
     background-color: $secondary-color;
+    min-width: 135px;
+    padding: 0;
+    bottom: -5px;
+    left: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $variable-background;
   }
 }
 
@@ -37,4 +47,9 @@
   border-radius: 3px;
   min-height: 56px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+    min-height: 77px;
+  }
 }
