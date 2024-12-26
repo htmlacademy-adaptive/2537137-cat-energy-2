@@ -5,6 +5,14 @@
   &__more-wrapper {
     padding: 25px 30px 21px;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      padding-top: 75px;
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-bottom: 82px;
+    }
   }
 
   &--show-more {
@@ -16,6 +24,15 @@
     padding: 10px 37px 40px;
     border: none;
     background-image: linear-gradient($basic-background 100px, $variable-background 100px, $variable-background 312px);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .card--show-more {
+    background-image: none;
+    margin-top: 100px;
+    border: 2px solid $variable-background;
+    padding: 50px 37px 40px;
   }
 }
 
@@ -78,13 +95,9 @@
   color: $additional-color;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 10px;
-    text-decoration: underline #cdcdcd;
-    text-decoration-style: solid;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 5px;
-    text-underline-position: under;
-    justify-content: flex-start;
+    margin-bottom: 5px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #cdcdcd;
   }
 }
 
@@ -98,12 +111,6 @@
   }
 }
 
-.card__value {
-  @media (min-width: $tablet-width) {
-    margin-left: auto;
-  }
-}
-
 .card__link-icon::before {
   @include pseudo;
   @include transform;
@@ -114,6 +121,13 @@
   width: 30px;
   height: 30px;
   top: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+    top: 80px;
+    background-size: 60px 60px;
+  }
 }
 
 .card__more {
@@ -126,6 +140,13 @@
   margin: 0;
   margin-bottom: 8px;
   padding-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0;
+    margin-bottom: 23px;
+  }
 }
 
 .card__text {
@@ -133,6 +154,11 @@
   line-height: 16px;
   color: $additional-color;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .card__button {

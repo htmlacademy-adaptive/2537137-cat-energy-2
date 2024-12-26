@@ -37,6 +37,11 @@
   z-index: 16;
   position: relative;
   display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 
 .additional-products__list {
