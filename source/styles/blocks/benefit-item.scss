@@ -5,7 +5,25 @@
   &__button {
     width: 100%;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 27px;
+
+    &:last-child {
+      border-bottom: 1px solid #cdcdcd;
+      padding-bottom: 27px;
+      margin-bottom: 0;
+    }
+  }
 }
+
+// .benefit-item .benefit-item__button {
+//   @media (min-width: $tablet-width) {
+//     margin-left: 38px;
+//     margin-right: 38px;
+//     min-width: 632px;
+//   }
+// }
 
 .benefit-item__name {
   font-family: $font-secondary;
@@ -18,17 +36,53 @@
   padding-top: 13px;
   border-top: 1px solid #cdcdcd;
   margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+    border-top: none;
+  }
+}
+
+.benefit-item__main-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    padding-left: 38px;
+    padding-right: 38px;
+    margin-bottom: 25px;
+    border-top: 1px solid #cdcdcd;
+  }
 }
 
 .benefit-item__wrapper {
   @include flex-between;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-left: auto;
+  }
 }
 
 .benefit-item__text {
   @include benefit-item;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .benefit-item__value {
   @include benefit-item;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 49px;
+  }
 }

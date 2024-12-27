@@ -298,34 +298,42 @@
         <div class="additional-products__wrapper">
           <ul class="additional-products__list">
             <li class="additional-products__item benefit-item">
-              <h3 class="benefit-item__name">Сахарозаменитель</h3>
-              <div class="benefit-item__wrapper">
-                <p class="benefit-item__text">1 упаковка (100 г)</p>
-                <p class="benefit-item__value">200 ₽</p>
+              <div class="benefit-item__main-wrapper">
+                <h3 class="benefit-item__name">Сахарозаменитель</h3>
+                <div class="benefit-item__wrapper">
+                  <p class="benefit-item__text">1 упаковка (100 г)</p>
+                  <p class="benefit-item__value">200 ₽</p>
+                </div>
               </div>
               <button class="button benefit-item__button" type="button">Заказать</button>
             </li>
             <li class="additional-products__item benefit-item">
-              <h3 class="benefit-item__name">Питьевая вода</h3>
-              <div class="benefit-item__wrapper">
-                <p class="benefit-item__text">5 литров</p>
-                <p class="benefit-item__value">50 ₽</p>
+              <div class="benefit-item__main-wrapper">
+                <h3 class="benefit-item__name">Питьевая вода</h3>
+                <div class="benefit-item__wrapper">
+                  <p class="benefit-item__text">5 литров</p>
+                  <p class="benefit-item__value">50 ₽</p>
+                </div>
               </div>
               <button class="button benefit-item__button" type="button">Заказать</button>
             </li>
             <li class="additional-products__item benefit-item">
-              <h3 class="benefit-item__name">Молоко</h3>
-              <div class="benefit-item__wrapper">
-                <p class="benefit-item__text">1 литр</p>
-                <p class="benefit-item__value">100 ₽</p>
+              <div class="benefit-item__main-wrapper">
+                <h3 class="benefit-item__name">Молоко</h3>
+                <div class="benefit-item__wrapper">
+                  <p class="benefit-item__text">1 литр</p>
+                  <p class="benefit-item__value">100 ₽</p>
+                </div>
               </div>
               <button class="button benefit-item__button" type="button">Заказать</button>
             </li>
             <li class="additional-products__item benefit-item">
-              <h3 class="benefit-item__name">Витамины</h3>
-              <div class="benefit-item__wrapper">
-                <p class="benefit-item__text">1 упаковка (30 г)</p>
-                <p class="benefit-item__value">300 ₽</p>
+              <div class="benefit-item__main-wrapper">
+                <h3 class="benefit-item__name">Витамины</h3>
+                <div class="benefit-item__wrapper">
+                  <p class="benefit-item__text">1 упаковка (30 г)</p>
+                  <p class="benefit-item__value">300 ₽</p>
+                </div>
               </div>
               <button class="button benefit-item__button" type="button">Заказать</button>
             </li>
@@ -339,12 +347,14 @@
     <section class="newsletter">
       <div class="newsletter__container container">
         <h2 class="newsletter__title">Акции и новинки</h2>
-        <p class="newsletter__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
-        <form class="newsletter__form catalog-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="newsletter-email">Ваш e-mail</label>
-          <input class="catalog-form__input" type="email" name="newsletter-email" id="newsletter-email" placeholder="кuklachev@gmail.com" required>
-          <button class="button catalog-form__button" type="submit">Подписаться</button>
-        </form>
+        <div class="newsletter__wrapper">
+          <p class="newsletter__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+          <form class="newsletter__form catalog-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="newsletter-email">Ваш e-mail</label>
+            <input class="catalog-form__input" type="email" name="newsletter-email" id="newsletter-email" placeholder="кuklachev@gmail.com" required>
+            <button class="button catalog-form__button" type="submit">Подписаться</button>
+          </form>
+        </div>
       </div>
     </section>
     <section class="address address--catalog-page">
@@ -352,7 +362,7 @@
         <h2 class="visually-hidden">Как нас найти</h2>
         <div class="address__wrapper">
           <p class="address__text">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="address__direction">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <address class="address__direction">ул. Большая Конюшенная, д. 19/8 <span class="address__direction--city">Санкт-Петербург</span></address>
         </div>
       </div>
       <div class="address__map-wrapper">
