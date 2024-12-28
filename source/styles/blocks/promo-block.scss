@@ -15,6 +15,15 @@
     padding: 57px 125px 60px 77px;
     background-position: 100%, 100% -320px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    min-height: 288px;
+    min-width: 245px;
+    padding: 56px 42px 43px;
+    text-align: center;
+    background-position: center center;
+  }
 }
 
 .promo-block__text {
@@ -29,6 +38,10 @@
     padding: 0;
   }
 
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+
   &::before {
     @include pseudo;
     position: relative;
@@ -41,10 +54,16 @@
     margin-bottom: 48px;
 
     @media (min-width: $tablet-width) {
-      width: 80px;
       height: 82px;
       background-size: 80px 82px;
       margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 83px;
+      background-size: 80px 83px;
+      margin: 0 auto;
+      margin-bottom: 46px;
     }
   }
 }
