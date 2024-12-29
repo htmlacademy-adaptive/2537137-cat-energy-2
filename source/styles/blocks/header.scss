@@ -9,9 +9,10 @@
     &::after {
       @include pseudo;
       background-image: linear-gradient(rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%), url("../../images/index-background-desktop@2x.png");
+      background-color: #4e4d54;
       background-repeat: no-repeat;
       background-position: top right;
-      background-size: 100% 100%;
+      background-size: 100%, 720px 694px;
       width: 50%;
       height: 694px;
       top: 0;

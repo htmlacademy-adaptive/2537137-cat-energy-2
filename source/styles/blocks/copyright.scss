@@ -2,27 +2,22 @@
   @include flex-between;
   text-decoration: none;
 
-  @media (min-width: $tablet-width) {
-    gap: 23px;
+  &:hover {
+    .copyright__image {
+      fill: $additional-background;
+    }
   }
 
   &:active {
     opacity: 0.3;
+
+    .copyright__image {
+      fill: $additional-background;
+    }
   }
 
-  & .copyright__image {
-    display: block;
-    fill: #666666;
-
-    &:hover,
-    &:focus {
-      fill: $additional-background;
-    }
-
-    &:active {
-      fill: $additional-background;
-      opacity: 0.3;
-    }
+  @media (min-width: $tablet-width) {
+    gap: 23px;
   }
 }
 
@@ -30,4 +25,9 @@
   font-size: 16px;
   line-height: 20px;
   color: $additional-color;
+}
+
+.copyright__image {
+  display: block;
+  fill: #666666;
 }
