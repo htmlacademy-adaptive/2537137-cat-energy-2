@@ -2,29 +2,29 @@
   font-family: $font-secondary;
   font-size: 24px;
   line-height: 24px;
-  padding: 14px 5px 17px;
+  padding: 14px 5px 10px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-    padding: 15px 30px 20px;
+    padding: 15px 30px 10px;
   }
 }
 
 .stats__definition {
   font-size: 12px;
   line-height: 12px;
-  max-width: 77px;
   color: $additional-color;
   text-transform: lowercase;
   margin: 0;
   text-align: center;
   padding: 0 10px;
-  position: absolute;
-  bottom: -17px;
-  left: 20%;
   background-color: $extra-background;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  left: 20%;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -32,8 +32,11 @@
     background-color: $secondary-color;
     min-width: 135px;
     padding: 0;
-    bottom: -5px;
     left: 15px;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -42,11 +45,26 @@
 }
 
 .stats__item {
-  min-width: 124px;
-  border: 1px solid #cdcdcd;
-  border-radius: 3px;
-  min-height: 56px;
   position: relative;
+  min-width: 124px;
+
+  &::after {
+    @include pseudo;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+    top: 0;
+    left: 0;
+
+    @media (max-width: $mobile-width-only) {
+      min-width: 124px;
+      height: 56px;
+    }
+
+    @media (min-width: $tablet-width) {
+      min-width: 162px;
+      height: 72px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     min-width: 162px;
