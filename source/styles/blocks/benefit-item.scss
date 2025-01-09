@@ -70,6 +70,10 @@
     margin: 0;
     border-top: none;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 315px;
+  }
 }
 
 .benefit-item__main-wrapper {
@@ -99,11 +103,6 @@
     margin-bottom: 0;
     margin-left: auto;
   }
-
-  @media (min-width: $desktop-width) {
-    width: 285px;
-    margin-right: 40px;
-  }
 }
 
 .benefit-item__text {
@@ -112,6 +111,11 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 233px;
+    margin-left: 10px;
   }
 }
 
@@ -122,5 +126,10 @@
     font-size: 16px;
     line-height: 20px;
     margin-left: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 10px;
+    width: 72px;
   }
 }

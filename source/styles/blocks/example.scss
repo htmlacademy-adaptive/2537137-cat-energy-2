@@ -2,13 +2,13 @@
   background-color: $extra-background;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient($basic-background 57%, $extra-background 55%);
+    background-image: linear-gradient(to top, $extra-background 443px, $basic-background 151px);
     padding-bottom: 101px;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 75px;
-    background-image: linear-gradient($basic-background 136px, $variable-background 136px, $variable-background 326px);
+    background-image: linear-gradient(to top, $variable-background 460px, $basic-background 135px);
   }
 }
 
@@ -23,6 +23,7 @@
 
   @media (min-width: $desktop-width) {
     @include flex-between;
+    align-items: flex-end;
     gap: 224px;
   }
 }
