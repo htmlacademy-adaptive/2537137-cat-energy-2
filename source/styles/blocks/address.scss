@@ -83,8 +83,23 @@
   width: 100%;
   display: block;
   border: none;
+  position: relative;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     min-height: 400px;
   }
+}
+
+.address__map-wrapper {
+  position: relative;
+}
+
+.address__map-picture {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  width: 100%;
+  object-fit: cover;
 }
