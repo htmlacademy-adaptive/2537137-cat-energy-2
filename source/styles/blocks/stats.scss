@@ -8,7 +8,7 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-    padding: 15px 30px 10px;
+    padding: 15px 10px 10px;
   }
 }
 
@@ -24,7 +24,7 @@
   position: relative;
   z-index: 1;
   display: inline-block;
-  left: 20%;
+  max-width: 87px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -32,11 +32,6 @@
     background-color: $secondary-color;
     min-width: 135px;
     padding: 0;
-    left: 15px;
-
-    br {
-      display: none;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -47,6 +42,9 @@
 .stats__item {
   position: relative;
   min-width: 124px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &::after {
     @include pseudo;

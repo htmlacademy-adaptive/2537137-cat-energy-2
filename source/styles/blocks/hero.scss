@@ -1,5 +1,5 @@
 .hero {
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 63%, $secondary-color 63%), url("../../images/index-background-mobile@2x.png");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 63%, $secondary-color 63%), url("../../images/index-background-mobile@1x.png");
   background-color: $secondary-color;
   background-repeat: no-repeat;
   background-position: top center;
@@ -8,6 +8,10 @@
   display: block;
   margin-bottom: 20px;
   min-height: 320px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 63%, $secondary-color 63%), url("../../images/index-background-mobile@2x.png");
+  }
 
   @media (max-width: $mobile-width-only) {
     background-color: #4d4e52;
@@ -131,12 +135,15 @@
     margin: 0;
     position: absolute;
     bottom: 0;
-    transform: translate(0, 0);
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 32px;
-    right: 262px;
+    right: 261px;
+    left: auto;
+    transform: none;
   }
 }

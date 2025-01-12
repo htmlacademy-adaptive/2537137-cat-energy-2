@@ -1,5 +1,4 @@
 .copyright__link {
-  @include flex-between;
   text-decoration: none;
 
   &:hover {
@@ -25,9 +24,21 @@
   font-size: 16px;
   line-height: 20px;
   color: $additional-color;
+  padding-right: 23px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 50px;
+  }
 }
 
 .copyright__image {
   display: block;
   fill: #666666;
+  position: absolute;
+  right: 0;
+  top: 13px;
+
+  @media (min-width: $tablet-width) {
+    top: -5px;
+  }
 }

@@ -1,10 +1,9 @@
 .social__list {
   @include reset;
-  @include flex-between;
-
-  @media (min-width: $tablet-width) {
-    gap: 24px;
-  }
+  display: grid;
+  grid-template-columns: repeat(3, 28px);
+  justify-content: center;
+  gap: 24px;
 }
 
 .social__link {

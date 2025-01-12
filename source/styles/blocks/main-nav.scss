@@ -30,11 +30,13 @@
 
   @media (min-width: $tablet-width) {
     margin-left: auto;
+    padding-left: 20px;
   }
 
   @media (min-width: $desktop-width) {
     z-index: 1;
     background-color: transparent;
+    max-width: 620px;
   }
 }
 
