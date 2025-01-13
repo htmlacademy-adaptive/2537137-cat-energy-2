@@ -1,5 +1,9 @@
 .social__list {
   @include reset;
+  display: grid;
+  grid-template-columns: repeat(3, 28px);
+  justify-content: center;
+  gap: 24px;
 }
 
 .social__link {
@@ -35,4 +39,3 @@
     background-color: rgba(104, 183, 56, 0.3);
   }
 }
-

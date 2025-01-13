@@ -1,5 +1,33 @@
 .promo-block {
-  background-color: $additional-background;
+  margin-top: 35px;
+  min-height: 280px;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/catalog-background-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  display: block;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/catalog-background-mobile@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 70px;
+    min-height: 200px;
+    text-align: left;
+    padding: 57px 125px 60px 77px;
+    background-position: 100%, 100% -320px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    min-height: 288px;
+    min-width: 245px;
+    padding: 56px 42px 43px;
+    text-align: center;
+    background-position: center center;
+  }
 }
 
 .promo-block__text {
@@ -7,14 +35,39 @@
   font-size: 16px;
   line-height: 20px;
   margin: 0;
+  padding: 59px 61px 43px 58px;
+
+  @media (min-width: $tablet-width) {
+    @include flex-between;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 
   &::before {
-    display: block;
-    content: "";
+    @include pseudo;
+    position: relative;
     background-image: url("../../icons/stack.svg#gift-icon");
     background-repeat: no-repeat;
     background-size: 78px 80px;
     width: 80px;
     height: 80px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+
+    @media (min-width: $tablet-width) {
+      height: 82px;
+      background-size: 80px 82px;
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 83px;
+      background-size: 80px 83px;
+      margin: 0 auto;
+      margin-bottom: 46px;
+    }
   }
 }

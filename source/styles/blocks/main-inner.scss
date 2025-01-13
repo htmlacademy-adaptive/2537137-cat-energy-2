@@ -1,4 +1,15 @@
 .main-inner {
-  display: block;
+  flex-grow: 1;
 }
 
+.main-inner__catalog {
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 74px;
+  }
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
+}
