@@ -7,11 +7,11 @@
     }
 
     @media (min-width: $tablet-width) {
-      padding-top: 65px;
+      padding-top: 61px;
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 74px;
+      padding-top: 70px;
     }
   }
 }
@@ -20,12 +20,12 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    gap: 59px 58px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
+    gap: 64px 80px;
   }
 }
 
