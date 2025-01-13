@@ -8,18 +8,18 @@
 
   @media (min-width: $tablet-width) {
     @include flex-between;
-    padding-top: 55px;
+    padding-top: 62px;
     padding-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 72px;
+    padding-bottom: 69px;
   }
 }
 
 .main-footer__logo {
-  padding: 0 76px 19px;
+  padding: 0 76px 15px;
   border-bottom: 1px solid #d9d9d9;
   width: 100%;
   text-align: center;
@@ -38,11 +38,12 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     border-bottom: none;
+    padding-left: 35px;
   }
 }
 
 .main-footer__copyright {
-  padding-top: 20px;
+  padding-top: 26px;
   position: relative;
 
   @media (min-width: $tablet-width) {

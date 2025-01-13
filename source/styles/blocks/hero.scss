@@ -53,7 +53,7 @@
     color: $primary-color;
     font-size: 60px;
     line-height: 60px;
-    padding-top: 65px;
+    padding-top: 60px;
     padding-right: 20px;
     padding-left: 90px;
     margin-bottom: 40px;
@@ -65,7 +65,7 @@
   @media (min-width: $desktop-width) {
     font-size: 60px;
     line-height: 60px;
-    padding: 110px 10px 0 80px;
+    padding: 107px 10px 0 80px;
     margin-bottom: 40px;
     max-width: 560px;
   }
@@ -141,8 +141,8 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 32px;
-    right: 261px;
+    top: 26px;
+    right: 260px;
     left: auto;
     transform: none;
   }

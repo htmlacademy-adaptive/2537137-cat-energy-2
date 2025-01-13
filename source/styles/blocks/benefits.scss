@@ -43,7 +43,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 230px);
     gap: 37px 153px;
   }
 
@@ -60,7 +60,7 @@
   align-content: center;
 
   &:not(:last-child) {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $tablet-width) {
@@ -82,7 +82,7 @@
       line-height: 280px;
       color: $variable-background;
       font-family: "Oswald", "Arial", sans-serif;
-      top: 5px;
+      top: 2px;
       right: 30px;
       width: 134px;
       height: 280px;
@@ -107,6 +107,22 @@
   }
 
   &::after {
+    @media (min-width: $tablet-width) {
+      right: -20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 0;
+    }
+  }
+
+  &--icon-clock {
+    @media (min-width: $tablet-width) {
+      min-width: 249px;
+    }
+  }
+
+  &--icon-clock::after {
     @media (min-width: $tablet-width) {
       right: 0;
     }

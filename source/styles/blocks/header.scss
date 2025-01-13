@@ -48,7 +48,7 @@
 
 .header__menu-wrapper {
   @include flex-between;
-  padding: 13px 0 15px;
+  padding: 12px 0;
   position: relative;
 
   @media (min-width: $tablet-width) {
