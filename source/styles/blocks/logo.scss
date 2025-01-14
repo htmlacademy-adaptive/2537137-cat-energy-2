@@ -1,6 +1,7 @@
 .logo {
   display: inline-block;
   text-decoration: none;
+  transition: all 0.3s;
 
   &:hover {
     opacity: 0.8;

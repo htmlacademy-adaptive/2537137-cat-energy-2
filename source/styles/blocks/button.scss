@@ -1,5 +1,6 @@
 .button {
   @include primary-button($font-secondary, $secondary-color, $additional-background);
+  transition: all 0.3s;
 
   &:hover {
     background-color: $background-hover;

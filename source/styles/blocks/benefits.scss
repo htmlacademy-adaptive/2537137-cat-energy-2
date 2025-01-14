@@ -43,8 +43,8 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 230px);
-    gap: 37px 153px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 37px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,6 +61,12 @@
 
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -83,7 +89,6 @@
       color: $variable-background;
       font-family: "Oswald", "Arial", sans-serif;
       top: 2px;
-      right: 30px;
       width: 134px;
       height: 280px;
       z-index: -1;
@@ -108,27 +113,14 @@
 
   &::after {
     @media (min-width: $tablet-width) {
-      right: -20px;
+      right: 74px;
     }
 
     @media (min-width: $desktop-width) {
       right: 0;
     }
   }
-
-  &--icon-clock {
-    @media (min-width: $tablet-width) {
-      min-width: 249px;
-    }
-  }
-
-  &--icon-clock::after {
-    @media (min-width: $tablet-width) {
-      right: 0;
-    }
-  }
 }
-
 
 .benefits__item--icon-leaf::before {
   background-image: url("../../icons/stack.svg#icon-leaf");
