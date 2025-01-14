@@ -1,0 +1,146 @@
+.benefit-item {
+  display: block;
+  margin-bottom: 18px;
+
+  &__button {
+    width: 100%;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 9px;
+      padding-bottom: 9px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 244px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 27px;
+
+    &:last-child {
+      border-bottom: 1px solid #cdcdcd;
+      padding-bottom: 27px;
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #cdcdcd;
+    margin-bottom: 0;
+
+    &:first-child {
+      padding-top: 16px;
+      border-top: 1px solid #cdcdcd;
+    }
+
+    &:last-child {
+      padding-top: 15px;
+      padding-bottom: 16px;
+    }
+  }
+
+  &__button-wrapper {
+    @media (min-width: $tablet-width) {
+      padding-left: 38px;
+      padding-right: 38px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+      margin-left: auto;
+    }
+  }
+}
+
+.benefit-item__name {
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $variable-color;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 13px;
+  border-top: 1px solid #cdcdcd;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+    border-top: none;
+    padding-right: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 315px;
+  }
+}
+
+.benefit-item__main-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    padding-left: 38px;
+    padding-right: 38px;
+    margin-bottom: 24px;
+    border-top: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+    border-top: none;
+    justify-content: space-between;
+  }
+}
+
+.benefit-item__wrapper {
+  @include flex-between;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-left: auto;
+    padding-top: 2px;
+  }
+}
+
+.benefit-item__text {
+  @include benefit-item;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: -8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 233px;
+    margin-left: 10px;
+  }
+}
+
+.benefit-item__value {
+  @include benefit-item;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 49px;
+    padding-left: 10px;
+    margin-right: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 10px;
+    width: 72px;
+  }
+}

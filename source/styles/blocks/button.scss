@@ -1,0 +1,23 @@
+.button {
+  @include primary-button($font-secondary, $secondary-color, $additional-background);
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $background-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button--secondary {
+  color: $additional-color;
+  background-color: $variable-background;
+
+  &:hover,
+  &:active {
+    background-color: #ebebeb;
+    color: $additional-color;
+  }
+}

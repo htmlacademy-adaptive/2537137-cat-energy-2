@@ -1,0 +1,86 @@
+.site-list {
+  background-color: $basic-background;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 33px;
+    flex-wrap: wrap;
+  }
+
+  &--background {
+    @media (min-width: $desktop-width) {
+      background-color: transparent;
+    }
+  }
+}
+
+.site-list__item {
+  padding: 22px 10px 20px;
+  border-bottom: 1px solid #e6e6e6;
+  text-align: center;
+
+  @media (max-width: $mobile-width-only) {
+    &:nth-child(1) {
+      border-top: 1px solid #e6e6e6;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    @include flex-between;
+    border: none;
+    padding: 0;
+
+    &--current {
+      border-top: none;
+      text-decoration: underline;
+      text-underline-offset: 8px;
+      text-decoration-thickness: 2px;
+      text-underline-position: under;
+      text-decoration-color: $additional-background;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--current-background {
+      text-underline-offset: 8px;
+      text-decoration-color: $basic-background;
+    }
+  }
+}
+
+.site-list__button {
+  display: inline-block;
+  font-family: $font-secondary;
+  font-size: 20px;
+  line-height: 20px;
+  color: $primary-color;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 14px;
+    padding-bottom: 12px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &--background {
+    @media (min-width: $desktop-width) {
+      color: $basic-background;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.logo {
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &__image {
+    display: inline-block;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 14px;
+  }
+}
+
+.logo__link {
+  display: inline-block;
+
+  &:hover,
+  &:focus {
+    fill: #3e3e3e;
+  }
+
+  &:active {
+    fill: #6b6b6b;
+  }
+}
+
+.logo__text-image {
+  @include transform;
+  display: inline-block;
+  position: absolute;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    transform: none;
+  }
+}
