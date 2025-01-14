@@ -71,3 +71,15 @@
   color: $additional-color;
   margin: 0;
 }
+
+@mixin input-valid {
+  font-family: $font-secondary;
+  color: $additional-color;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding: 13px;
+  border: 1px solid #cdcdcd;
+  width: 100%;
+  margin-bottom: 14px;
+}

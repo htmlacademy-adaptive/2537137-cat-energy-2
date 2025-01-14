@@ -7,15 +7,7 @@
   }
 
   &__input {
-    font-family: $font-secondary;
-    color: $additional-color;
-    font-size: 20px;
-    line-height: 30px;
-    text-transform: uppercase;
-    padding: 13px;
-    border: 1px solid #cdcdcd;
-    width: 100%;
-    margin-bottom: 14px;
+    @include input-valid;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
@@ -34,8 +26,13 @@
       min-width: 256px;
     }
   }
-}
 
-.catalog-form__input:invalid {
-  border: 2px solid #ff8282;
+  &__input--invalid {
+    @include input-valid;
+    border: 2px solid #ff8282;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
 }
