@@ -10,6 +10,10 @@
     height: 512px;
     display: block;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 11px;
+  }
 }
 
 .slider__toggle {
@@ -24,12 +28,9 @@
   position: absolute;
   top: 0;
   right: 50%;
+  transform: translateX(50%);
   z-index: 10;
   transition: all 0.3s;
-
-  @media (min-width: $desktop-width) {
-    margin-top: -11px;
-  }
 
   &::before {
     @include pseudo;
@@ -76,16 +77,12 @@
   overflow: hidden;
   position: absolute;
 
-  @media (min-width: $desktop-width) {
-    margin-top: -11px;
-  }
-
   &--first {
     z-index: 9;
     background-color: $extra-background;
 
     @media (min-width: $tablet-width) {
-      background-image: linear-gradient(to top, $extra-background 364px, $basic-background 151px);
+      background-image: linear-gradient(to top, $extra-background 353px, $basic-background 151px);
     }
 
     @media (min-width: $desktop-width) {
