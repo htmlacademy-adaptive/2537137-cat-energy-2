@@ -30,7 +30,8 @@
   right: 50%;
   transform: translateX(50%);
   z-index: 10;
-  transition: all 0.3s;
+  transition-property: background-color, opacity;
+  transition-duration: 0.3s, 0.3s;
 
   &::before {
     @include pseudo;
@@ -82,7 +83,7 @@
     background-color: $extra-background;
 
     @media (min-width: $tablet-width) {
-      background-image: linear-gradient(to top, $extra-background 353px, $basic-background 151px);
+      background-image: linear-gradient(to top, $extra-background 365px, $basic-background 151px);
     }
 
     @media (min-width: $desktop-width) {

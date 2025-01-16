@@ -29,22 +29,6 @@
     @include flex-between;
     border: none;
     padding: 0;
-
-    &--current {
-      border-top: none;
-      text-decoration: underline;
-      text-underline-offset: 8px;
-      text-decoration-thickness: 2px;
-      text-underline-position: under;
-      text-decoration-color: $additional-background;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &--current-background {
-      text-underline-offset: 8px;
-      text-decoration-color: $basic-background;
-    }
   }
 }
 
@@ -56,7 +40,9 @@
   color: $primary-color;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all 0.3s;
+  transition-property: opacity;
+  transition-duration: 0.3s;
+  position: relative;
 
   &:hover {
     opacity: 0.6;
@@ -78,9 +64,30 @@
     line-height: 30px;
   }
 
+  &--active::after {
+    @media (min-width: $tablet-width) {
+      @include pseudo;
+      height: 2px;
+      background-color: $additional-background;
+      left: 0;
+      right: 0;
+      bottom: 3px;
+    }
+  }
+
   &--background {
     @media (min-width: $desktop-width) {
       color: $basic-background;
+    }
+  }
+
+  &--background::after {
+    @media (min-width: $desktop-width) {
+      height: 2px;
+      background-color: $basic-background;
+      left: 0;
+      right: 0;
+      bottom: 5px;
     }
   }
 }

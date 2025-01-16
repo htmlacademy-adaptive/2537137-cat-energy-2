@@ -10,7 +10,7 @@
   }
 }
 
-.container.benefits__container {
+.benefits.benefits__container {
   @media (min-width: $tablet-width) {
     padding-bottom: 46px;
     border-bottom: 1px solid #e6e6e6;
@@ -103,6 +103,7 @@
     background-position: 50%;
     top: 0;
     left: 0;
+    background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
       width: 80px;
@@ -124,25 +125,21 @@
 
 .benefits__item--icon-leaf::before {
   background-image: url("../../icons/stack.svg#icon-leaf");
-  background-repeat: no-repeat;
   background-size: 30px 32px;
 }
 
 .benefits__item--icon-liquid::before {
   background-image: url("../../icons/stack.svg#icon-liquid");
-  background-repeat: no-repeat;
   background-size: 26px 29px;
 }
 
 .benefits__item--icon-tableware::before {
   background-image: url("../../icons/stack.svg#icon-tableware");
-  background-repeat: no-repeat;
   background-size: 25px 30px;
 }
 
 .benefits__item--icon-clock::before {
   background-image: url("../../icons/stack.svg#icon-clock");
-  background-repeat: no-repeat;
   background-size: 26px 31px;
 }
 

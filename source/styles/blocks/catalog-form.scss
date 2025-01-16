@@ -6,14 +6,6 @@
     display: flex;
   }
 
-  &__input {
-    @include input-valid;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 0;
-    }
-  }
-
   &__button {
     width: 100%;
     font-size: 20px;
@@ -29,10 +21,30 @@
 
   &__input--invalid {
     @include input-valid;
-    border: 2px solid #ff8282;
+    outline-width: 2px;
+    outline-color: #ff8282;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
     }
+  }
+}
+
+.catalog-form__input {
+  @include input-valid;
+  transition-property: border-color, outline-width;
+  transition-duration: 0.3s, 0.3s;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border-color: $additional-color;
+    outline-width: 2px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }

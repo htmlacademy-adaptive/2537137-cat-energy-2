@@ -63,8 +63,8 @@
     }
 
     @media (min-width: $tablet-width) {
-      min-width: 162px;
-      height: 72px;
+      width: 100%;
+      height: calc(100% - 6px);
     }
   }
 
