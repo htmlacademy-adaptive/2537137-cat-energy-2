@@ -2,21 +2,6 @@
   padding: 20px 20px 24px;
   border-bottom: 1px solid #ebebeb;
 
-  &__more-wrapper {
-    padding: 53px 30px 21px;
-    text-align: center;
-    position: relative;
-
-    @media (min-width: $tablet-width) {
-      padding: 160px 77px 20px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 0;
-      padding: 150px 37px 20px;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     padding: 10px 37px 40px;
     border: none;
@@ -28,6 +13,21 @@
   @media (min-width: $desktop-width) {
     padding-left: 38px;
     padding-right: 38px;
+  }
+}
+
+.card__more-wrapper {
+  padding: 53px 30px 21px;
+  text-align: center;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 160px 77px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding: 150px 37px 20px;
   }
 }
 
@@ -49,8 +49,8 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .card__show-wrapper {
+.card__show-wrapper {
+  @media (min-width: $tablet-width) {
     border: 2px solid $variable-background;
     padding-bottom: 40px;
     flex-grow: 1;

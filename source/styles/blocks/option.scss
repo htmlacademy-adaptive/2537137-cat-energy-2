@@ -194,7 +194,8 @@
     background-color: $primary-color;
     width: 24px;
     height: 12px;
-    transition: all, all 1.3s;
+    transition-property: all;
+    transition-duration: 0.3;
     mask-image: url("../../icons/stack.svg#arrow-catalog-slim-pro");
     mask-position: left center;
     mask-size: 24px 12px;

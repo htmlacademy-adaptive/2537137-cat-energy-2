@@ -2,10 +2,6 @@
   display: inline-block;
   text-decoration: none;
 
-  &__image {
-    display: inline-block;
-  }
-
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
@@ -15,6 +11,10 @@
   @media (min-width: $desktop-width) {
     gap: 14px;
   }
+}
+
+.logo__image {
+  display: inline-block;
 }
 
 .logo__link {
