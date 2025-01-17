@@ -25,12 +25,12 @@
   fill: $extra-color;
 }
 
-.logo__link:hover + .logo__text-footer,
-.logo__link:focus + .logo__text-footer {
+.logo__link:hover .logo__text-footer,
+.logo__link:focus .logo__text-footer {
   fill: #3e3e3e;
 }
 
-.logo__link:active + .logo__text-footer {
+.logo__link:active .logo__text-footer {
   fill: #6b6b6b;
 }
 

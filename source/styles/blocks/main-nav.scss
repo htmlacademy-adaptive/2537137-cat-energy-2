@@ -6,6 +6,9 @@
       .main-nav__toggle {
         background-image: url("../../icons/stack.svg#close-button-navigation-mobile");
         display: block;
+        height: 18px;
+        width: 18px;
+        top: 22px;
       }
 
       .main-nav__list {
@@ -47,15 +50,15 @@
 .main-nav__toggle {
   display: none;
   position: absolute;
-  top: 22px;
+  top: 20px;
   right: 19px;
   background-color: $basic-background;
   background-image: url("../../icons/stack.svg#hamburger-button-navigation-mobile");
   background-repeat: no-repeat;
-  background-size: 18px 18px;
+  background-size: 24px 24px;
   background-position: center;
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   padding: 0;
   border: none;
   cursor: pointer;
