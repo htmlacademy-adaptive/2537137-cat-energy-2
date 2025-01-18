@@ -1,6 +1,7 @@
 .copyright__link {
   text-decoration: none;
-  transition: all 0.3s;
+  transition-property: fill, opacity;
+  transition-duration: 0.3s;
 
   &:hover {
     .copyright__image {
@@ -26,6 +27,7 @@
   line-height: 20px;
   color: $additional-color;
   padding-right: 23px;
+  display: inline-block;
 
   @media (min-width: $tablet-width) {
     padding-right: 50px;

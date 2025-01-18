@@ -1,19 +1,6 @@
 .logo {
   display: inline-block;
   text-decoration: none;
-  transition: all 0.3s;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-
-  &__image {
-    display: inline-block;
-  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -26,17 +13,25 @@
   }
 }
 
+.logo__image {
+  display: inline-block;
+}
+
 .logo__link {
   display: inline-block;
+}
 
-  &:hover,
-  &:focus {
-    fill: #3e3e3e;
-  }
+.logo__text-footer {
+  fill: $extra-color;
+}
 
-  &:active {
-    fill: #6b6b6b;
-  }
+.logo__link:hover .logo__text-footer,
+.logo__link:focus .logo__text-footer {
+  fill: #3e3e3e;
+}
+
+.logo__link:active .logo__text-footer {
+  fill: #6b6b6b;
 }
 
 .logo__text-image {

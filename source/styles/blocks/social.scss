@@ -9,25 +9,28 @@
 .social__link {
   display: block;
   text-decoration: none;
-  transition: all 0.3s;
+  transition-property: background-color;
+  transition-duration: 0.3s;
   background-position: 50%;
   background-repeat: no-repeat;
   min-width: 28px;
   min-height: 22px;
   background-color: #666666;
   mask-repeat: no-repeat;
-  mask-size: 28px 22px;
 
   &--vkontakte {
     mask-image: url("../../icons/stack.svg#vk-icon");
+    mask-size: 27px 17px;
   }
 
   &--youtube {
     mask-image: url("../../icons/stack.svg#youtube-icon");
+    mask-size: 24px 19px;
   }
 
   &--telegram {
     mask-image: url("../../icons/stack.svg#telegram-icon");
+    mask-size: 27px 17px;
   }
 
   &:hover,

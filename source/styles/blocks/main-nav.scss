@@ -6,6 +6,9 @@
       .main-nav__toggle {
         background-image: url("../../icons/stack.svg#close-button-navigation-mobile");
         display: block;
+        height: 18px;
+        width: 18px;
+        top: 22px;
       }
 
       .main-nav__list {
@@ -48,7 +51,7 @@
   display: none;
   position: absolute;
   top: 20px;
-  right: 21px;
+  right: 19px;
   background-color: $basic-background;
   background-image: url("../../icons/stack.svg#hamburger-button-navigation-mobile");
   background-repeat: no-repeat;
