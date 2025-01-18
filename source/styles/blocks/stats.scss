@@ -8,7 +8,7 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-    padding: 15px 10px 13px;
+    padding: 15px 10px 12px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,7 +59,7 @@
 
     @media (max-width: $mobile-width-only) {
       min-width: 100%;
-      height: calc(100% - 10px);
+      height: calc(100% - 16px);
     }
 
     @media (min-width: $tablet-width) {

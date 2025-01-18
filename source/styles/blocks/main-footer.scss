@@ -32,13 +32,14 @@
 }
 
 .main-footer__social {
-  padding: 20px 74px 19px;
+  padding: 23px 5px 17px 11px;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     border-bottom: none;
-    padding-left: 35px;
+    padding-left: 40px;
+    padding-right: 5px;
   }
 }
 

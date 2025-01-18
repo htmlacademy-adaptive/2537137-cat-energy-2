@@ -23,7 +23,7 @@
 .catalog-form__input {
   @include input-valid;
   transition-property: border-color, outline-width;
-  transition-duration: 0.3s, 0.3s;
+  transition-duration: 0.3s;
 
   &:hover {
     border-color: #cdcdcd;

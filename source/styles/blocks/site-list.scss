@@ -71,7 +71,11 @@
       background-color: $additional-background;
       left: 0;
       right: 0;
-      bottom: 1px;
+      bottom: 3px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: 5px;
     }
   }
 

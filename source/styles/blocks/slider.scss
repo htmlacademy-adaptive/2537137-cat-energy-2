@@ -12,6 +12,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
     margin-bottom: 11px;
   }
 }
@@ -31,7 +32,7 @@
   transform: translateX(50%);
   z-index: 10;
   transition-property: background-color, opacity;
-  transition-duration: 0.3s, 0.3s;
+  transition-duration: 0.3s;
 
   &::before {
     @include pseudo;
