@@ -78,12 +78,10 @@
 
     &::after {
       background-color: $additional-background;
-      opacity: 0.6;
     }
 
     &::before {
       border: 2px solid $additional-background;
-      opacity: 0.6;
     }
   }
 }
